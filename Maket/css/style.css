@@ -19,6 +19,7 @@ body {
     align-items: center;
     height: 88px;
     flex-grow: 1;
+    border-bottom: 1px solid #D9FFF5;
 }
 
 .header__button {
@@ -44,11 +45,6 @@ body {
     background-color: #EAEAEA;
 }
 
-.body__shadow {
-    min-width: 320px;
-    height: 1px;
-    background-color: #D9FFF5;
-}
 
 main {
     padding: 0;
@@ -63,11 +59,16 @@ main {
     flex-basis: 40px;
 }
 
-.main__highlight {
-    width: 4px;
+.main__h1-box::before {
+    content: "";
+    position: absolute;
     height: 40px;
+    width: 8px;
+    border-radius: 4px;
     background-color: #41F6D7;
+    left: -4px;
 }
+
 
 h1 {
     padding: 16px 24px;
